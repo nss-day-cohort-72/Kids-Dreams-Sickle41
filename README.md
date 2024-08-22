@@ -35,10 +35,10 @@ Make sure your Developer Tools are open at all times while working on this proje
 Before you click the "Complete Assessment" button on the Learning Platform, add your answers below each question and make a commit.
 
 1. When a child is clicked on in the browser, which module contains the code that will execute on that event happening? Can you explain the algorithm of that logic?
-   > Your answer here
+   > Kids.js contains the code that executes the click event. We utilize a click event listener with the child element to listen for when a suitable element is clicked on then display a window alert with the data id and wish attributes to populate that window alert.
 2. In the **Pairings** module, why must the `findCelebrityMatch()` function be invoked inside the `for..of` loop that iterates the kids array?
-   > Your answer here
+   > So that each child within the array can be matched to their celebrity. Which a for..of loop is required for.
 3. In the **CelebrityList** module, can you describe how the name of the sport that the celebrity plays can be displayed in the window alert text?
    > Your answer here
 4. Can you describe, in detail, the algorithm that is in the `main` module?
-   > Your answer here
+   > The `document.querySelector("#container")` method finds the first element in the DOM with the `container` id then assigns it to the `mainContainer` variable. Then we have the string of html assigned to the `applicationHTML` variable that contains sections that correspond to Kids, Celebrities, and Pairings with their respective functions interpolated within said sections. Finally we assign `applicationHTML` to `mainContainer` with a `.innerHTML` property to set the `container` element to in the DOM to the HTML content provided in `applicationHTML` so it can be rendered.
